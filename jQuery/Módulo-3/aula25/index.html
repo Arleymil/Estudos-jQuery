@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula25</title>
+    <style>
+      span{
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        border: 2px groove;
+        padding: 20px;
+      }
+      div{
+        font: 40px verdana;
+        padding: 20px;
+      }
+      .impar{
+        background: #CCC
+      }
+      .destaque{ 
+          background: #000; 
+          color: #fff;
+      }
+      .tooltip {
+          width: 180px;
+          padding: 2px 4px;
+          margin-top: 25px;
+          border: 1px solid #000;
+          color: #000;
+          background: #DDD;
+          position: absolute;
+      }
+      .sub th{
+        text-align: left;
+        background: #DDD;
+      }
+    </style>
+</head>
+<body>
+  <table id="filmes">
+      <thead>
+          <tr>
+              <th> Filme</th>
+              <th scope="col">Genêro</th>
+              <th scope="col">Descrição</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="sub">
+              <th colspan="5">Filmes de comédia</th>
+          </tr>
+          <tr>
+              <th scope="row">Chico Xavier</th>
+              <td>Drama</td>
+              <td>124'</td>
+          </tr>
+          <tr>
+             <th scope="row">O bem amado</th>
+             <td>Comédia</td>
+             <td>132'</td>
+         </tr>
+         <tr>
+             <th scope="row"><strong>O auto da compadecida</strong> </th>
+             <td>Comédia</td>
+             <td>105'</td>
+         </tr>
+         <tr class="sub">
+             <th colspan="5"> Filmes de outros genêros</th>
+         </tr>
+         <tr>
+             <th scope="row">Carandiru</th>
+             <td>Crime</td>
+             <td>145'</td>
+         </tr>
+         <tr>
+             <th scope="row">Central do Brasil</th>
+             <td>Drama</td>
+             <td>113'</td>
+         </tr>
+         <tr>
+             <th scope="row">Cidade de Deus </th>
+             <td>Crime</td>
+             <td>130'</td>
+         </tr>
+         <tr>
+             <th scope="row">Deus é Brasileiro </th>
+             <td>Comédia</td>
+             <td>110'</td>
+         </tr>
+      </tbody>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="../js/aulas/aula25.js"></script>
+</body>
+</html>
+</body>
+</html>

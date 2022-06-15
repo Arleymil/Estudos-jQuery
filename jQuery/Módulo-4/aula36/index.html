@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula36</title>
+    <link rel="stylesheet" href="../jquery-ui-1.13.1.custom/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+ 
+</head>
+<body>
+   <div class="demo">
+       <div id="dialog" title="Dialog Modal">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nihil dolor? Exercitationem libero omnis, inventore at blanditiis hic soluta id vero illum reiciendis aut, aliquam consequatur perspiciatis dolorem animi ut!</p>
+       </div>
+       <div class="hiddenInviewSource" slot="padding:20px">
+           <p>Sed vel diam id libero <a href="http://example.com"> rutrum</a></p>
+           <form action="">
+               <input type="text" value="text input"> <br>
+               <input type="checkbox" name="" id=""> checkbox <br>
+               <input type="radio" name="" id="">
+               <select name="" id="">
+                   <option value="select">select</option>
+               </select><br><br>
+               <textarea name="" id="" cols="30" rows="10">textarea</textarea>
+           </form>
+           <div id="dialog" title="Dialog Modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nihil dolor? Exercitationem libero omnis, inventore at blanditiis hic soluta id vero illum reiciendis aut, aliquam consequatur perspiciatis dolorem animi ut!</p>
+            </div>
+       </div>
+   </div>
+    <script>
+        $(function() {
+            $("#dialog").dialog({
+                height:140,
+                modal:true,
+                buttons: {
+                    "deletar todos":function(){
+                    $(this).dialog("close");
+                    },
+                    "cancelar":function(){
+                        $(this).dialog("close");
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>
+</body>
+</html>

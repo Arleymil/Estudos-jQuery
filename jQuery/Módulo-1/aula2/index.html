@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <h1 id="titulo">Hello World!</h1>
+    <a href="#">Executar javascript</a>
+    <a href="#">Executar dois</a>
+    <a href="#">Executar outro</a>
+    <script>
+        $(document).ready(function(){
+            $('a').click(function(){
+                $('#titulo')
+                .css("color", "#0000FF")
+                .text('Curso e jQuery')
+                .hide()
+                .fadeToggle()
+            })
+        }) 
+    </script>
+</body>
+</html>

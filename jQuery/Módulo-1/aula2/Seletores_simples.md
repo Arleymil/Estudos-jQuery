@@ -1,0 +1,1 @@
+Jquery com conteúdo de seletores simples

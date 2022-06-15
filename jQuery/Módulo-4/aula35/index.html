@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula35</title>
+    <link rel="stylesheet" href="../jquery-ui-1.13.1.custom/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+ 
+</head>
+<body>
+    <p> Data: <input type="text" name="" id="date"></p>
+    <script>
+        $(function() {
+         /* $( "#date" ).datepicker({
+                showON: "button",
+                buttonImage: "../jquery-ui-1.13.1.custom/calendar.gif",
+                buttonImageOnly: true,
+          });*/
+
+          $( "#date" ).datepicker( $.datepicker.regional[ "pt-BR" ] );
+          
+        })
+    </script>
+</body>
+</html>
+</body>
+</html>

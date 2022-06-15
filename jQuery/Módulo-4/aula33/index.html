@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula33</title>
+    <link rel="stylesheet" href="../jquery-ui-1.13.1.custom/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+ 
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Aula 33 - jQuery UI</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ui-widget">
+                    <label for="city">Cidade: </label>
+                    <input type="text" id="city">
+                </div>
+            </div>
+        </div>
+
+    <script>
+        $(function() {
+           $('#city').autocomplete({
+               source: function(request, response){
+                     $.ajax({
+                          url: "http://ws.geonames.org/searchJSON?",
+                          dataType: "jsonp",
+                          data: {
+                              featureClass: "P",
+                              style: "full",
+                              maxRows: 12,
+                              name_startsWith: request.term
+                          },
+                          success: function(data){
+                            response($.map(data.geonames, function(item){
+                                 return {
+                                      label: item.name + (item.adminNamel ? ", " + item.adminName1 : "") + ", " + item.countryName,
+                                      value: item.name
+                                 }
+                            }))
+                          }
+                     })
+               },
+               minLength: 2,
+           });
+            
+        })
+    </script>
+</body>
+</html>
+</body>
+</html>

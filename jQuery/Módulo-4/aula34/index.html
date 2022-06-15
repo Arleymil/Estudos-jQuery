@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula34</title>
+    <link rel="stylesheet" href="../jquery-ui-1.13.1.custom/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+ 
+</head>
+<body>
+    <a href="#">Botao A</a>
+
+    <div id="checks">
+        <input type="checkbox" id="checkbox">X
+        <input type="checkbox" name="" id="checkbox"> T
+        <input type="checkbox" name="" id="checkbox"> I
+    </div>
+
+    <div id="radios">
+        <input type="radio" name="" id="radio1">Homem
+        <input type="radio" name="" id="radio2">Mulher
+    </div>
+
+    <script>
+        $(function() {
+            $('a').button({
+            icons:{
+                primary: "ui-icon-tag"},
+                Text: false
+        });
+            $('#checks').buttonset()
+            $('#radios').buttonset()
+        })
+    </script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula45</title>
+    <link rel="stylesheet" href="../jquery-ui-1.13.1.custom/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+    <script src="../jquery-ui-1.13.1.custom/jquery.validate.min.js"></script>
+   
+</head>
+
+<body>
+  
+    <form id="formulario">
+      <fieldset>
+          <div>
+            <label for="nome">nome</label>
+            <input type="text" class="required">
+          </div>
+          <div>
+            <label for="email" class="required email">email</label>
+            <input type="text">
+          </div>
+          <div>
+            <input type="submit" value="Gravar">
+          </div>
+      </fieldset>
+
+    </form>
+ 
+   
+    <script>
+        $(function () {
+
+           $( "#formulario" ).validate({
+             messages: {
+               nome: {
+                 required: "Campo obrigatório",
+                 email: "Digite um email válido"
+               }
+               
+             }
+           });
+
+            })
+
+
+    </script>
+</body>
+
+</html>
